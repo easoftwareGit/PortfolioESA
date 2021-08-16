@@ -53,7 +53,3 @@ li a:hover {
 .my_photo {
     border-radius: 0.5rem;
 }
-
-#projects_list {
-    display: inline-grid;
-}
