@@ -1,0 +1,59 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;             /* centers page if wider then 900 pixels */       
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgb(223, 242, 245);
+    display: flex;
+    /* margin-right: 0.5rem; */
+}
+
+.ul_nav {
+    display: flex;
+    list-style-type: none;        
+    align-items: center;
+    margin: 0;
+    margin-left: auto;    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* highlight nav item when mouse over item */
+li a:hover {
+    background-color: navy;
+    color: rgb(223, 242, 245);
+}
+
+.about_me_container {
+    margin-top: 1rem;    
+    display: flex;
+}
+
+.about_me_text_container {
+    margin-right: 1rem;
+}
+
+.my_photo {
+    border-radius: 0.5rem;
+}
+
+#projects_list {
+    display: inline-grid;
+}
