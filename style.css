@@ -61,7 +61,15 @@ li a:hover {
     height: auto;
 }
 
-.skillbox {
-    width: 20px;
-    height: 20px;
+.skills_certs_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills_certs_container img {
+    padding: 0 0.5rem;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
