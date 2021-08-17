@@ -61,11 +61,7 @@ li a:hover {
     height: auto;
 }
 
-/* #projects {
-    display: block;
+.skillbox {
+    width: 20px;
+    height: 20px;
 }
-
-summary {
-    margin: -0.5rem -0.5rem, 0;
-    padding: 0.5rem;
-} */
