@@ -4,15 +4,12 @@ html {
 
 body {
     max-width: 900px;
-    margin: 0 auto;             /* centers page if wider then 900 pixels */       
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;             /* centers page if wider then 900 pixels */               
 }
 
 nav {
     background-color: rgb(223, 242, 245);
-    display: flex;
-    /* margin-right: 0.5rem; */
+    display: flex;    
 }
 
 .ul_nav {
@@ -53,3 +50,22 @@ li a:hover {
 .my_photo {
     border-radius: 0.5rem;
 }
+
+.project_summary {
+    font-size: large;
+    font-weight: bold;
+}
+
+.project_img {
+    width: 100%;
+    height: auto;
+}
+
+/* #projects {
+    display: block;
+}
+
+summary {
+    margin: -0.5rem -0.5rem, 0;
+    padding: 0.5rem;
+} */
