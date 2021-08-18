@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bowlers Experience Too</title>
 
+    <!-- for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- for popup videos -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap-4.5.0.min.css">
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap/bootstrap-4.5.0.min.js"></script>
+
+    <!-- internal links -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>    
 </head>
@@ -30,7 +37,7 @@
                     <h2>About Me</h2>
                     <p>Hello. I am Eric Adolphson. I have been coding for 35 years. I got my start after taking a beginning programming class at UC Berkeley in my junior year. I then wrote an app (we called them programs back then) at my summer-time job. They people there liked my app, and I liked writing it.</p>
                     <p>After Cal I took an assembly language and a data structures course at a local Junior College and have been coding ever since. I am self-employed and have written apps for fortune 500 companies as well as small local businesses.</p>
-                    <p>Other activities include <a href="">bowling</a> and <a href="">golf</a>. I did a short stint on the Professional Bowler’s Association (PBA) National Tour. I won the 1992 Seattle Open. You can watch the title match <a href="https://www.youtube.com/watch?v=JITAlD9L0e8">here</a>. After a 15-year hiatus due to a bad right shoulder, I have started competitive bowling again.</p>
+                    <p>Other activities include <a href="#bowlingModal" data-toggle="modal">bowling</a> and <a href="#goldModal" data-toggle="modal">golf</a>. I did a short stint on the Professional Bowler’s Association (PBA) National Tour. I won the 1992 Seattle Open. You can watch the title match <a href="https://www.youtube.com/watch?v=JITAlD9L0e8">here</a>. After a 15-year hiatus due to a bad right shoulder, I have started competitive bowling again.</p>
                 </div>
                 <div class="about_me_img_container">
                     <img src="./images/BowlingSeattle92.jpg" alt="Photo of Eric Adolphson" class="my_photo">
@@ -100,6 +107,43 @@
                 </div>
             </div>
         </section>
+
+        <div class="popup_video">
+            <!-- bowling video  -->
+            <div id="bowlingModal" class="modal fade"></div>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-header">Eric Bowling</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="bowlingVideo" class="embed-responsive-item" src="./videos/Jagged_Edge.mp4" allowfullscreen></iframe>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- golf video  -->
+            <div id="golfModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-header">Eric Golfing</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="golfVideo" class="embed-responsive-item" src="./videos/Eric_16th.mp4" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
