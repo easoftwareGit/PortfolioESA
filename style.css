@@ -73,3 +73,14 @@ li a:hover {
     height: 40px;
     object-fit: contain;
 }
+
+.popup_video {
+    margin: 20px;
+}
+.modal-dialog {            
+    max-width: 100%;    /* sets modal window to full width of page*/
+}
+.modal-dialog iframe {
+    margin: 0 auto;
+    display: block;
+}

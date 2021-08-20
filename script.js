@@ -7,12 +7,12 @@ $(document).ready(function(){
     var bowling_url = $("#bowlingVideo").attr('src');
     
     /* Assign empty url value to the iframe src attribute when modal hide, which stop the video playing */
-    $("#bowlingModel").on('hide.bs.modal', function(){
+    $("#bowlingModal").on('hide.bs.modal', function(){
         $("#bowlingVideo").attr('src', '');
     });
     
     /* Assign the initially stored url back to the iframe src attribute when modal is displayed again */
-    $("#bowlingModel").on('show.bs.modal', function(){
+    $("#bowlingModal").on('show.bs.modal', function(){
         $("#bowlingVideo").attr('src', bowling_url);
     });
 
