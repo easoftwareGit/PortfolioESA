@@ -10,6 +10,17 @@ body {
 nav {
     background-color: rgb(223, 242, 245);
     display: flex;    
+    height: 3.5rem;
+}
+
+.myName {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.myName a {
+    color: black;
+    text-decoration: none;
 }
 
 .ul_nav {
@@ -38,8 +49,11 @@ li a:hover {
     color: rgb(223, 242, 245);
 }
 
-.about_me_container {
-    margin-top: 1rem;    
+section {
+    margin-top: 1rem;
+}
+
+.about_me_container {        
     display: flex;
 }
 
@@ -49,6 +63,10 @@ li a:hover {
 
 .my_photo {
     border-radius: 0.5rem;
+}
+
+#projects {
+    margin-bottom: 2rem;
 }
 
 .project_summary {
@@ -61,13 +79,13 @@ li a:hover {
     height: auto;
 }
 
-.skills_certs_container {
+.logo_containers {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.skills_certs_container img {
+.logo_containers img {
     padding: 0 0.5rem;
     width: 40px;
     height: 40px;
