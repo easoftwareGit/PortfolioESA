@@ -33,3 +33,11 @@ $(document).ready(function(){
         $("#golfVideo").attr('src', golf_url);
     });
 });
+
+function changeHTMLTag()
+{
+    var els = document.querySelectorAll('[myNameH2]');
+    for (var i = 0; i < els.length ; i++) {
+        els[i].outerHTML = '<h3>' + els[i].innerHTML + '</h3>';
+    }
+}

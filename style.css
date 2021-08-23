@@ -102,3 +102,65 @@ section {
     margin: 0 auto;
     display: block;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav {
+        height: 6rem;    
+    }
+    .about_me_container {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .my_photo {
+        width: 100%;
+    }
+    /* #test {
+      background-color: orange;
+    } */
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    .my_photo {
+        width: 250px;
+    }
+    body {
+        padding: 0 1rem;
+    }
+    /* #test {
+      background-color: purple;
+    } */
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .my_photo {
+        width: 300px;
+    }
+    body {
+        padding: 0 1rem;
+    }
+    /* #test {
+      background-color: green;
+    } */
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* do nothing */
+    /* #test {
+      background-color: blue;
+    } */
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    /* do nothing */
+    /* #test {
+      background-color: red;
+    } */
+  }
+  
+  
